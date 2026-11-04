@@ -390,3 +390,4 @@ Runs 28 native integration test cases covering search, filters, pagination, vali
 - ✅ **Parameterized SQL Queries:** Every dynamic query strictly uses `?` bindings (`db.all(sql, params)`). No user input is ever concatenated directly into SQL strings.
 - ✅ **Column Whitelisting:** Dynamic sorting columns and directions are verified against `ALLOWED_ORDER_BY` and `ALLOWED_ORDER_DIR` arrays to prevent SQL injection in `ORDER BY` clauses.
 - ✅ **Status Code Integrity:** 201 for create, 200 for read/update/delete, 400 for invalid inputs, 404 for missing records.
+

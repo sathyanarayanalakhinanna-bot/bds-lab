@@ -126,3 +126,4 @@ const books = await db.all('SELECT * FROM books');
 | 2 | Module Not Found | Incorrect relative path `./database/connection` | Changed to valid path `./db/connection` |
 | 3 | SQLite Error | Typo `book` instead of `books` in SQL statement | Corrected table name to `books` across queries |
 | 4 | Asynchronous Bug | Missing `await` on Promise-returning DB calls | Prepended `await` to `getDbConnection()`, `db.all()`, `db.get()`, `db.run()` |
+
